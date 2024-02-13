@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/226572fda1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+             <nav>
+                 <img src="images/Logo.jpeg" class="logo">
+                 <ul id="sidemenu">
+                     <li><a href="#header">Home</a></li>
+                     <li><a href="#About">About</a></li>
+                     <li><a href="#services">Services</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Software Developer</p>
+                <h1>Hi,I'm <span>Nomzamo</span><br>Nhlapo from South Africa </h1>
+            </div>
+        </div>
+    </div>
+
+<!--------------about----------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                <img src="images/About.png" >
+                </div>
+
+                <div class="About-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> Hi My Name is Nomzamo Nhlapo, a passionate Software /web developer with a flair for 
+                        crafting engaging online experiences.<br> With a keen eye for design and a love for clean, 
+                        efficient code. Driven by my curiosity and dedication to staying ahead in the 
+                        ever-evolving world of technology, I constantly seek out new challenges and opportunities to expand 
+                        my skills. <br> My approach to web development is rooted in collaboration and communication. 
+                        I believe in working closely with clients to understand their unique goals and vision, translating 
+                        their ideas into intuitive, user-friendly interfaces.<br> From concept to deployment, I'm committed to delivering 
+                        solutions that exceed expectations.When I'm not busy coding, you can find me exploring the great outdoors, 
+                        experimenting in the kitchen, or diving into a good book. I believe in living life to the fullest 
+                        and approaching every challenge with enthusiasm and a positive mindset.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web/Software</span><br>Designing web/App interface</li>
+                                <li><span>Web Developmwnt</span><br>Website development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>2023</span><br>Absa Financial Literacy Training</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - 2023</span><br>Diploma in IT in Software Development</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-----------Services------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Software Development</h2>
+                <p>I provide a whole software solutions that is customized to your particular business goals 
+                    and demands. As your dependable technology partner, I'm committed to reaching your goal by 
+                    using cutting-edge software solutions that promote growth, effectiveness, and achievement.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tachograph-digital"></i>
+                <h2>Web Development</h2>
+                <p>Design and Development I create websites from scratch or work on existing ones, using various programming
+                   languages, frameworks, and tools to bring designs to life. I will be responsible for the front-end of the
+                   website, which will involve coding the elements that the user interacts with directly.
+                   This includes designing and implementing layouts, navigation menus, interactive features, 
+                   and visual elements using languages like HTML, CSS, and JavaScript.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I create visually appealing and intuitive user interfaces (UI) that enhance the overall user experience (UX).
+                   I focus on usability, accessibility, and engagement to ensure that the app is easy to navigate and enjoyable to use. 
+                   I build mobile apps that are compatible with various platforms, such as iOS and Android. I make sure the applications load quickly,
+                   have beautiful animations, and have responsive user interfaces by improving them for speed. To enhance performance and save battery life,
+                   I use data compression and caching strategies to modify the code, and reduce the size of the app.</p>
+                    <a href="#"> Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!---------Portfolio------->
+
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/workweb.png">
+                <div class="layer">
+                    <h3>Websites</h3>
+                    <p>Every website I create is more than just a digital presence, 
+                       it's a carefully crafted online experience designed to captivate, engage, and inspire.
+                       With an understanding of user behavior and cutting-edge design concepts, 
+                       I specialize in developing websites that leave a lasting impression. </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/software.png">
+                <div class="layer">
+                    <h3>Software Engineering</h3>
+                    <p>Every innovative concept is the result of painstaking software development, 
+                        and I'm skilled at making those concepts come to life. I've created a wide 
+                        range of software solutions that are changing industries and redefining what's possible
+                         in the digital world because I have a passion for invention and a dedication to excellence.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/database.png">
+                <div class="layer">
+                    <h3>Database Administrator</h3>
+                    <p>I look after digital assets, making sure that information moves through a company safely, 
+                       effectively, and seamlessly. I improve data storage, accelerate access, and protect information 
+                       integrity with an eye for detail and a thorough understanding of database systems, enabling businesses 
+                       to confidently make educated decisions.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+
+<!---------ContactMe------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                 <h1 class="sub-title">Contact Me</h1>
+                 <p><i class="fa-solid fa-envelope"></i> nomzamonhlap97@gmail.com</p>
+                 <p><i class="fa-solid fa-phone"></i> 0681955455</p>
+
+                    <div class="social-icons">
+                       <a href=""><i class="fa-brands fa-instagram"></i></a>
+                       <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                       <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+
+                    <a href="images/Nomzamo Nhlapo Software Development CV .pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <input name="Message" rows="6" placeholder="Message">
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                 </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Nomzamo Nhlapo <i class="fa-solid fa-face-smile"></i> All rights reserved.</p>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+<!---------javascript----->
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName;("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tabinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+     
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+</script>
+
+<!-------script for menu------->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!----------Form script----------->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUVlyLVyiiIWFAb9d2bkJNUhH1IjpEBgGek6SOqbr77TfdBpSZ661HbJOBPduWOmpZWA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
